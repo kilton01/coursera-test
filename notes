@@ -1,0 +1,20 @@
+~/Desktop/coursera-test$ browser-sync start --server --directory --files "*"
+
+
+Resources
+stackoverflow
+jsfiddle.net
+codepen.io
+
+3-Core Web Technology
+HTML -> Structure
+CSS -> style
+JavaScript -> Behavior.
+
+standards, browser compatibility 
+w3C HTML5 standard -> w3c.org
+caniuse.com
+validator.w3.org
+
+NB: Check browser statistic before building a website.
+
