@@ -6,20 +6,93 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coursera</title>
 </head>
+<style>
+    /* Element Selector */
+    h1 {
+        color: green;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    /* Class Selector */
+    .intro {
+        margin: 0 100px 0 100px;
+        font-size: 1.5em;
+        color: grey;
+    }
+
+    /* id Selector */
+    #footer {
+        text-align: center;
+    }
+
+    /* Grouping Selectors */
+    hr,
+    .blue {
+        color: blueviolet;
+    }
+
+    /* Element with class Selector */
+    p.blue {
+        font-size: 20px;
+    }
+
+    /* Child Selector */
+    /* Every p that is a direct child of article */
+    article>p {
+        color: blue;
+        text-align: center;
+    }
+
+    /* Descendant Selector */
+    /* Every p that is inside of article */
+    article p {
+        text-align: center;
+        font-style: italic;
+        font-size: 40px;
+    }
+
+    /* Not Limited To Element Selectors */
+    /* Every p that is inside an element with class colored */
+    .colored p {
+        color: chartreuse;
+    }
+
+    /* Every element with class="colored" that is a direct
+    chile of article element */
+    article>.colored {
+        color: crimson;
+    }
+
+    /* Pseudo-Class Selector */
+    
+</style>
 
 <body>
-    <h1 style="color: green; font-size: 60px; text-align: center;">HTML is Structure Only</h1>
-    <p style="margin: 0 100px 0 100px; font-size: 1.5em;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    <h1>HTML is Structure Only</h1>
+    <p class="intro">Lorem ipsum dolor sit amet consectetur adipisicing elit.
         Incidunt est alias ex veniam velit non placeat adipisci!
         Fuga officia repellat enim minima dicta, possimus, eaque id, pariatur consequatur eligendi explicabo!</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptas molestiae, accusamus eos temporibus
+    <p class="blue">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptas molestiae, accusamus eos
+        temporibus
         quidem fugit. Cumque accusantium reprehenderit eaque necessitatibus nihil nisi laudantium numquam quas? Tenetur
         voluptatem fuga velit!</p>
 
+    <article>
+        <p>I will be affect by the child selector</p>
+    </article>
+    <p>I won't be affected by the child selector</p>
+
+    <article>
+        <p class="colored">Crimson style</p>
+        <div class="colored">
+            <p>Same goes for me, I won't be affected unless its a Descendant Selector</p>
+        </div>
+    </article>
 
     <footer>
         <hr>
-        <p style="text-align: center;" onclick="alert('EMAILING US IS USELESS');">Tech Support:
+        <p id="footer" onclick="alert('EMAILING US IS USELESS');">Tech Support:
             yeah.right@server-is-down.com</p>
     </footer>
 
